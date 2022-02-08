@@ -1,0 +1,244 @@
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  /* background-color: #e5e5e5; */
+  text-align: center;
+}
+
+.menu {
+  display: none;
+}
+
+.app {
+}
+
+.searcher {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 36px;
+  gap: 10px;
+}
+
+.searcher input {
+  flex-grow: 1;
+  border: none;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  color: rgba(144, 160, 183, 1);
+}
+
+.progression {
+  padding: 24px;
+}
+
+.progression__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progression__info h3 {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(51, 77, 110, 1);
+}
+
+.progression__info span {
+  font-size: 12px;
+  display: flex;
+  gap: 4px;
+}
+
+.progression__info span span {
+  color: #18a0fb;
+}
+
+.progression progress {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.progression_dates h3 {
+  font-weight: 500;
+  font-size: 15px;
+  text-align: left;
+}
+
+.divider {
+  border-bottom: 1px solid rgba(235, 239, 242, 1);
+}
+
+.card {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  margin: 24px;
+  background-color: rgb(252, 252, 252);
+  border-radius: 10px;
+  box-shadow: 4px 4px 40px 0px rgb(235, 230, 230);
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card__left {
+  text-align: left;
+  font-size: 13px;
+}
+
+.card__left p {
+  padding: 0.5rem 0;
+}
+
+.card__left > span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 20px;
+}
+
+.photo {
+  border-radius: 100%;
+}
+
+.card__rigth {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.card__rigth__icons {
+  display: flex;
+  gap: 1rem;
+}
+.edit {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .edit {
+    display: initial;
+  }
+}
+
+.card__rigth span {
+  color: rgba(144, 160, 183, 1);
+  font-weight: 500;
+  font-size: 12px;
+  justify-self: flex-start;
+}
+.card__rigth h4 {
+  background-color: rgba(46, 212, 122, 1);
+  border-radius: 4px;
+  color: white;
+  font-weight: 500;
+  font-size: 11px;
+  padding: 3px 8px;
+  min-width: 90px;
+  text-align: center;
+}
+
+.card__rigth h4.red {
+  background-color: rgba(247, 104, 91, 1);
+}
+
+.media {
+  padding: 24px;
+}
+
+.deals,
+.media-tasks {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.deals__title,
+.tasks__title {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.deals__title > h3,
+.tasks__title > h3 {
+  display: none;
+}
+
+.deals > span,
+.tasks__title > span {
+  display: flex;
+  gap: 4px;
+}
+.deals span span,
+.tasks__title span span {
+  color: #18a0fb;
+}
+
+.deals__grafic {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.deals__grafic span {
+  display: flex;
+  gap: 0.5rem;
+  padding: 20px;
+}
+
+.media-tasks {
+  margin-top: 1rem;
+}
+
+.tasks__grafic {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.tasks__grafic > img {
+  width: 150px;
+}
+
+.tasks__grafic__data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.tasks__grafic__data > span {
+  display: flex;
+  gap: 0.5rem;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="menu">
+        <h1 class="brand">SaaS Kit</h1>
+        <div class="personal-info">
+          <img src="" alt="" />
+          <h2 class="name"></h2>
+          <p class="email"></p>
+        </div>
+        <nav class="nav-bar">
+          <ul>
+            <li>
+              <img src="./images/menu/dashboard-active.svg" alt="" />Dashboard
+            </li>
+            <li><img src="./images/menu/tasks.svg" alt="" />Tasks</li>
+            <li><img src="./images/menu/email.svg" alt="" />Email</li>
+            <li><img src="./images/menu/contacts.svg" alt="" />Contacts</li>
+            <li><img src="./images/menu/chat.svg" alt="" />Chat</li>
+            <li><img src="./images/menu/deals.svg" alt="" />Deals</li>
+          </ul>
+        </nav>
+        <div class="down-menu">
+          <p><img src="" alt="" />Settings</p>
+          <p><img src="" alt="" />Toggle sidebar</p>
+        </div>
+      </div>
+      <div class="app">
+        <section class="searcher">
+          <img src="./images/searcher/search.svg" alt="" /><input
+            type="text"
+            placeholder="Global search"
+          /><img src="./images/searcher/notifications.svg" alt="" />
+        </section>
+        <section class="tasks-media">
+          <div class="tasks">
+            <div class="progression">
+              <div class="progression__info">
+                <h3>8 task completed out of 10</h3>
+                <span
+                  >Show: <span>This week</span
+                  ><img src="./images/tasks/Polygon.svg" alt=""
+                /></span>
+              </div>
+              <progress id="file" max="100" value="80"></progress>
+              <div class="progression_dates">
+                <h3>23 December, Sunday</h3>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="tasks-cards">
+              <div class="card">
+                <div class="card__left">
+                  <h4>Send benefit review by...</h4>
+                  <p>Due Date: <span>December 23, 2018</span></p>
+                  <span
+                    ><img
+                      class="photo"
+                      src="./images/tasks/GeorgeFields.svg"
+                      alt=""
+                    />George Fields</span
+                  >
+                </div>
+                <div class="card__rigth">
+                  <span>Reminder</span>
+                  <h4>Completed</h4>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__left">
+                  <h4>Invite to office meet-up</h4>
+                  <p>Due Date: <span>December 23, 2018</span></p>
+                  <span
+                    ><img
+                      class="photo"
+                      src="./images/tasks/Rebecca Moore.svg"
+                      alt=""
+                    />Rebecca Moore
+                  </span>
+                </div>
+                <div class="card__rigth">
+                  <span>Call</span>
+                  <div class="card__rigth__icons">
+                    <img class="edit" src="./images/tasks/Edit.svg" alt="" />
+                    <img
+                      class="garbage"
+                      src="./images/tasks/Garbage.svg"
+                      alt=""
+                    />
+                    <h4 class="red">Ended</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card__left">
+                  <h4>Office meet-up</h4>
+                  <p>Due Date: <span>December 23, 2018</span></p>
+                  <span
+                    ><img
+                      src="./images/tasks/Lindsey Stroud.svg"
+                      alt=""
+                    />Lindsey Stroud</span
+                  >
+                </div>
+                <div class="card__rigth">
+                  <span>Event</span>
+                  <h4>Completed</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="media">
+            <div class="deals">
+              <div class="deals__title">
+                <h3>Deals</h3>
+                <span
+                  >Show: <span>Monthly</span
+                  ><img src="./images/tasks/Polygon.svg" alt=""
+                /></span>
+              </div>
+              <div class="divider"></div>
+              <div class="deals__grafic">
+                <span
+                  ><img src="./images/media/Deals/Ellipse 2.svg" alt="" />Closed
+                  deals</span
+                >
+                <img src="./images/media/Deals/deals_graphic.svg" alt="" />
+              </div>
+            </div>
+            <div class="media-tasks">
+              <div class="tasks__title">
+                <h3>Deals</h3>
+                <span
+                  >Show: <span>Monthly</span
+                  ><img src="./images/tasks/Polygon.svg" alt=""
+                /></span>
+              </div>
+              <div class="divider"></div>
+              <div class="tasks__grafic">
+                <img src="./images/media/tasks/graphic.svg" alt="" />
+                <div class="tasks__grafic__data">
+                  <span
+                    ><img
+                      src="./images/media/tasks/yellow.svg"
+                      alt=""
+                    />Active</span
+                  >
+                  <span
+                    ><img
+                      src="./images/media/tasks/green.svg"
+                      alt=""
+                    />Completed</span
+                  >
+                  <span
+                    ><img
+                      src="./images/media/tasks/red.svg"
+                      alt=""
+                    />Ended</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
