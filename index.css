@@ -173,6 +173,7 @@ li {
   /* border: 1px solid blue; */
   flex-basis: 92%;
   display: flex;
+  justify-content: space-evenly;
 }
 
 @media (max-width: 825px) {
@@ -248,8 +249,14 @@ li {
 
 progress {
   width: 100%;
+  /* border-radius: 3px; */
   margin: 1rem 0;
   height: 0.5rem;
+}
+
+progress::-webkit-progress-bar {
+  /* background-color: rgba(46, 212, 122, 1); */
+  /* border-radius: 10px; */
 }
 
 .progression_dates > h3 {
