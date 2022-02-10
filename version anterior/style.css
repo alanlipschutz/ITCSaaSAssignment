@@ -28,22 +28,50 @@ p {
 }
 
 .wrapper {
-  /* background-color: #e5e5e5; */
   text-align: center;
+  height: 100%;
+}
+
+@media (min-width: 450px) {
+  .wrapper {
+    display: flex;
+    /* background-color: #f1efef; */
+  }
 }
 
 .menu {
   display: none;
 }
 
+@media (min-width: 450px) {
+  .menu {
+    display: initial;
+    flex-basis: 20%;
+    border: 1px solid red;
+    background-color: white;
+  }
+}
+
 .app {
+}
+
+@media (min-width: 450px) {
+  .app {
+    flex-basis: 80%;
+  }
 }
 
 .searcher {
   display: flex;
   justify-content: flex-start;
-  padding: 20px 36px;
+  padding: 1rem 2.5rem;
   gap: 10px;
+}
+
+@media (min-width: 450px) {
+  .searcher {
+    background-color: white;
+  }
 }
 
 .searcher input {
@@ -54,8 +82,23 @@ p {
   color: rgba(144, 160, 183, 1);
 }
 
+@media (min-width: 450px) {
+  .tasks-media {
+    display: flex;
+    margin: 0 1rem;
+  }
+}
+
+@media (min-width: 450px) {
+  .tasks {
+    flex-basis: 60%;
+    margin: 1rem;
+    border: 1px solid red;
+  }
+}
+
 .progression {
-  padding: 24px;
+  padding: 1rem;
 }
 
 .progression__info {
@@ -96,10 +139,10 @@ p {
 }
 
 .card {
-  padding: 16px;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
-  margin: 24px;
+  margin: 1.5rem;
   background-color: rgb(252, 252, 252);
   border-radius: 10px;
   box-shadow: 4px 4px 40px 0px rgb(235, 230, 230);
@@ -140,15 +183,20 @@ p {
   display: flex;
   gap: 1rem;
 }
-.edit {
-  display: none;
-}
 
-@media (min-width: 600px) {
-  .edit {
+/* .edit {
+  display: none;
+} */
+/* @media (min-width: 450px) {
+  .edit,
+  .garbage {
+    display: none;
+  }
+  .edit:hover,
+  .garbage:hover {
     display: initial;
   }
-}
+} */
 
 .card__rigth span {
   color: rgba(144, 160, 183, 1);
@@ -175,10 +223,35 @@ p {
   padding: 24px;
 }
 
+@media (min-width: 450px) {
+  .media {
+    flex-basis: 40%;
+    margin: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
 .deals,
 .media-tasks {
   font-size: 12px;
   font-weight: 400;
+  border: 1px red solid;
+}
+
+@media (min-width: 450px) {
+  .deals,
+  .media-tasks {
+    flex-basis: 40%;
+    padding: 1rem;
+    background-color: white;
+  }
+
+  .media-tasks {
+    margin-top: 1.2rem;
+  }
 }
 
 .deals__title,
@@ -189,12 +262,26 @@ p {
   margin-bottom: 1rem;
 }
 
+@media (min-width: 450px) {
+  .deals__title,
+  .tasks__title {
+    justify-content: space-between;
+  }
+}
+
 .deals__title > h3,
 .tasks__title > h3 {
   display: none;
 }
 
-.deals > span,
+@media (min-width: 450px) {
+  .deals__title > h3,
+  .tasks__title > h3 {
+    display: initial;
+  }
+}
+
+.deals__title > span,
 .tasks__title > span {
   display: flex;
   gap: 4px;
@@ -205,7 +292,6 @@ p {
 }
 
 .deals__grafic {
-  overflow: auto;
   display: flex;
   flex-direction: column;
 }
@@ -216,10 +302,6 @@ p {
   padding: 20px;
 }
 
-.media-tasks {
-  margin-top: 1rem;
-}
-
 .tasks__grafic {
   margin-top: 2rem;
   display: flex;
@@ -228,7 +310,7 @@ p {
 }
 
 .tasks__grafic > img {
-  width: 150px;
+  max-width: 200px;
 }
 
 .tasks__grafic__data {
