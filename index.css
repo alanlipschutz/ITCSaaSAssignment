@@ -39,7 +39,7 @@ li {
   background-color: #e5e5e5;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 825px) {
   .wrapper {
     background-color: rgba(255, 255, 255, 1);
   }
@@ -175,7 +175,7 @@ li {
   display: flex;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 825px) {
   .main-app {
     flex-direction: column;
     align-items: center;
@@ -185,14 +185,14 @@ li {
 .main-tasks {
   /* border: 1px solid red; */
   margin: 2rem 1rem 2rem 2rem;
-  flex-basis: 100%;
+  flex-basis: 60%;
   display: flex;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 4px;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 825px) {
   .main-tasks {
     margin: 0;
   }
@@ -232,6 +232,12 @@ li {
   gap: 4px;
   cursor: pointer;
 }
+
+@media (max-width: 825px) {
+  .progression__info__show > span > span {
+    color: #18a0fb;
+  }
+}
 .progression__info__show > span > span:hover {
   color: #18a0fb;
 }
@@ -265,7 +271,7 @@ progress {
   font-weight: 500;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 825px) {
   .progression_dates ul {
     display: none;
   }
@@ -318,7 +324,7 @@ progress {
   display: initial;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 825px) {
   .edit {
     display: none;
   }
@@ -393,7 +399,7 @@ progress {
   cursor: pointer;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 825px) {
   .show-more {
     display: none;
   }
@@ -420,7 +426,7 @@ progress {
   background-color: rgba(255, 255, 255, 1);
 }
 
-@media (max-width: 376px) {
+@media (max-width: 825px) {
   .main-graphs__deals {
     padding: 0;
   }
@@ -433,7 +439,7 @@ progress {
   align-items: center;
   margin: 0 1rem;
 }
-@media (max-width: 376px) {
+@media (max-width: 825px) {
   .main-graphs__deals__title,
   .main-graphs__tasks__title {
     justify-content: flex-end;
@@ -446,7 +452,7 @@ progress {
   color: rgba(25, 42, 62, 1);
 }
 
-@media (max-width: 376px) {
+@media (max-width: 825px) {
   .main-graphs__deals__title > h3,
   .main-graphs__tasks__title > h3 {
     display: none;
@@ -460,7 +466,7 @@ progress {
   font-size: 12px;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 825px) {
   .main-graphs__deals__title > span > span,
   .main-graphs__tasks__title > span > span {
     color: #18a0fb;
@@ -481,7 +487,8 @@ progress {
 }
 
 .graphic {
-  max-width: 400px;
+  /* max-width: 400px; */
+  width: 100%;
   max-height: 200px;
 }
 
@@ -494,7 +501,7 @@ progress {
   background-color: rgba(255, 255, 255, 1);
 }
 
-@media (max-width: 376px) {
+@media (max-width: 825px) {
   .main-graphs__tasks {
     padding: 0;
   }
@@ -507,7 +514,8 @@ progress {
 }
 
 .main-graphs__tasks__graphic .graphic {
-  max-width: 180px;
+  /* max-width: 180px; */
+  width: 100%;
   max-height: 180px;
   margin-top: 1rem;
 }
@@ -524,5 +532,4 @@ progress {
   font-size: 10px;
   color: rgba(25, 42, 62, 1);
   font-weight: 400;
-  margin-left: 3rem;
 }
