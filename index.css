@@ -249,14 +249,19 @@ li {
 
 progress {
   width: 100%;
-  /* border-radius: 3px; */
   margin: 1rem 0;
   height: 0.5rem;
+  -webkit-appearance: none;
 }
 
 progress::-webkit-progress-bar {
-  /* background-color: rgba(46, 212, 122, 1); */
-  /* border-radius: 10px; */
+  background-color: #ebeff2;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color: rgba(46, 212, 122, 1);
+  border-radius: 10px;
 }
 
 .progression_dates > h3 {
@@ -444,7 +449,6 @@ progress::-webkit-progress-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 1rem;
 }
 @media (max-width: 825px) {
   .main-graphs__deals__title,
@@ -488,7 +492,7 @@ progress::-webkit-progress-bar {
 
 .main-graphs__deals__graphic > span {
   display: flex;
-  margin: 1rem;
+  margin: 1rem 0;
   gap: 0.5rem;
   font-size: 10px;
 }
@@ -516,13 +520,13 @@ progress::-webkit-progress-bar {
 
 .main-graphs__tasks__graphic {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 .main-graphs__tasks__graphic .graphic {
   /* max-width: 180px; */
-  width: 100%;
+  flex-basis: 60%;
   max-height: 180px;
   margin-top: 1rem;
 }
